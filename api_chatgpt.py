@@ -5,7 +5,6 @@ import dotenv
 dotenv.load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-
 def ler_arquivo(arquivo):
     with open(arquivo, "r", encoding="utf-8") as file:
         return file.read()
